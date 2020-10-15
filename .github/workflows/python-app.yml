@@ -20,11 +20,11 @@ jobs:
       run: |
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+        ls
     - name: zip
       uses: montudor/action-zip@v0.1.0
       with:
         args: zip -qq -r ./bundle.zip ./
-          
     - name: default deploy
       uses: appleboy/lambda-action@master
       with:
