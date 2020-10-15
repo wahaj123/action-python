@@ -4,7 +4,7 @@ def lambda_handler(event, context):
         'statusCode': 200,
         'isBase64Encoded': False,
         'body': {
-            'msg': 'Hello from Lambda!'
+            'msg': 'Hello from Wahaj!'
         },
         'headers': {
             'Content-Type': 'application/json'
